@@ -43,7 +43,7 @@ fi
 
 # Check filenames
 DIRECTORIES=("lib" "scripts")
-for directory in "${DIRECTORIES}"; do
+for directory in "${DIRECTORIES[@]}"; do
 	if [ -d "$directory" ]; then
 		for file in $(find "$directory" -type f | grep -v -E node_modules); do
 			BASENAME="$(basename "$file")"
