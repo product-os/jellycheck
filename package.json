@@ -1,0 +1,26 @@
+{
+  "name": "@balena/jellycheck",
+  "version": "0.0.1",
+  "description": "Scripts to perform common checks on Jellyfish files",
+  "bin": {
+    "jellycheck": "main.sh"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/product-os/jellcheck.git"
+  },
+  "keywords": [
+    "git",
+    "ci",
+    "testing"
+  ],
+  "author": "Balena.io. <hello@balena.io>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/product-os/jellycheck/issues"
+  },
+  "homepage": "https://github.com/product-os/jellycheck#readme"
+}
