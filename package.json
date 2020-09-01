@@ -1,6 +1,6 @@
 {
   "name": "@balena/jellycheck",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Scripts to perform common checks on Jellyfish files",
   "bin": {
     "jellycheck": "jellycheck.sh"
