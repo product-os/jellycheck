@@ -6,7 +6,7 @@
 # Proprietary and confidential.
 ###
 
-set -eu
+set -e
 
 # Check for files in lib/ that shouldn't be there
 if [ -d "lib" ]; then
@@ -42,8 +42,11 @@ if [ -d "lib" ]; then
 fi
 
 # Check filenames
-DIRECTORIES=("lib" "scripts")
+DIRECTORIES=("lib" "scripts" "test")
 for directory in "${DIRECTORIES[@]}"; do
+	if [[ "$1" == "--ui-lib" && ("$directory" == "lib" || "$directory" == "test") ]]; then
+		continue
+	fi
 	if [ -d "$directory" ]; then
 		for file in $(find "$directory" -type f | grep -v -E node_modules); do
 			BASENAME="$(basename "$file")"
