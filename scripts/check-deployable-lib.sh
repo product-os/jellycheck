@@ -34,7 +34,7 @@ fi
 
 DOCKERFILE="$(find lib -name '*Dockerfile*')"
 
-if [ -n "$HTML" ]; then
+if [ -n "$DOCKERFILE" ]; then
 	echo "There can not be Dockefiles in lib/" 1>&2
 	echo "All deployable components should live in apps" 1>&2
 	echo "" 1>&2
