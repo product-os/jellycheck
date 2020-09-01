@@ -6,7 +6,7 @@
     "jellycheck": "jellycheck.sh"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make lint && make test"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/product-os/jellycheck/issues"
   },
-  "homepage": "https://github.com/product-os/jellycheck#readme"
+  "homepage": "https://github.com/product-os/jellycheck#readme",
+  "devDependencies": {
+    "shellcheck": "^0.4.4"
+  }
 }
