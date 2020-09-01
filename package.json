@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Scripts to perform common checks on Jellyfish files",
   "bin": {
-    "jellycheck": "main.sh"
+    "jellycheck": "jellycheck.sh"
   },
   "scripts": {
     "test": "make test"
