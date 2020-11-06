@@ -5,6 +5,12 @@
   "enabledManagers": [
     "npm"
   ],
+  "force": {
+    "constraints": {
+      "node": "< 15.0.0"
+    }
+  },
+  "pruneStaleBranches": false,
   "rangeStrategy": "bump",
   "commitMessagePrefix": "patch:",
   "commitBody": "Change-type: patch",
