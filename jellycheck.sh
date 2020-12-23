@@ -95,12 +95,14 @@ LICENSE_SHEBANG_SH="#!/bin/bash
 JAVASCRIPT_FILES="$(find . \( -name '*.js' \) \
 	-and -not -path './*node_modules/*' \
 	-and -not -path './build/*' \
+	-and -not -path './.out/*' \
 	-and -not -path './docs/*' \
 	-and -not -path './.tmp/*')"
 
 SHELL_FILES="$(find . -name '*.sh' \
 	-and -not -path './*node_modules/*' \
 	-and -not -path './build/*' \
+	-and -not -path './.out/*' \
 	-and -not -path '**/dist/*' \
 	-and -not -path '**/.libs/*' \
 	-and -not -path './.git/*' \
