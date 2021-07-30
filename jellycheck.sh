@@ -52,6 +52,9 @@ for directory in "${DIRECTORIES[@]}"; do
 			BASENAME="$(basename "$file")"
 
 			# Known exceptions
+			if [ "$directory" == "test" ] && [ "$BASENAME" = "Dockerfile" ]; then
+				continue
+			fi
 			if [ "$BASENAME" = "LICENSE" ] || [ "$BASENAME" = "README.md" ]; then
 				continue
 			fi
