@@ -6,7 +6,8 @@
     "jellycheck": "jellycheck.sh"
   },
   "scripts": {
-    "test": "make lint && make test"
+    "test": "npm run lint && ./jellycheck.sh",
+    "lint": "shellcheck ./jellycheck.sh"
   },
   "repository": {
     "type": "git",
