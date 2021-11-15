@@ -19,7 +19,7 @@
     "testing"
   ],
   "author": "Balena.io. <hello@balena.io>",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/product-os/jellycheck/issues"
   },
