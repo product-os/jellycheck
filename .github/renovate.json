@@ -1,31 +1,5 @@
 {
   "extends": [
-    "config:base"
-  ],
-  "enabledManagers": [
-    "npm"
-  ],
-  "force": {
-    "constraints": {
-      "node": "< 15.0.0"
-    }
-  },
-  "pruneStaleBranches": false,
-  "rangeStrategy": "bump",
-  "commitMessagePrefix": "patch:",
-  "commitBody": "Change-type: patch",
-  "prHourlyLimit": 0,
-  "labels": [
-    "dependencies"
-  ],
-  "packageRules": [
-    {
-      "groupName": "non-major",
-      "updateTypes": [
-        "minor",
-        "patch"
-      ],
-      "automerge": true
-    }
+    "github>product-os/jellyfish-config//config/renovate"
   ]
 }
