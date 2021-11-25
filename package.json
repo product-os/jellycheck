@@ -1,6 +1,6 @@
 {
   "name": "@balena/jellycheck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scripts to perform common checks on Jellyfish files",
   "bin": {
     "jellycheck": "jellycheck.sh"
@@ -28,6 +28,6 @@
     "shellcheck": "^0.4.4"
   },
   "versionist": {
-    "publishedAt": "2021-11-20T01:27:14.427Z"
+    "publishedAt": "2021-11-25T03:26:46.059Z"
   }
 }
